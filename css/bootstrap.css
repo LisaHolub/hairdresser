@@ -6755,3 +6755,91 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+div {
+  font-style: Arial;
+}
+
+body { padding-bottom: 70px; }
+
+.w3-content {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 0.2em;
+}
+
+
+
+th,td {
+  padding: 0.2em 0.5em;
+  border-radius: 0.1em;
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  box-shadow: inset 1px 3px 2px -3px rgba(0,0,0,0.5);
+  background-color: #a38f99;
+  font-family: Arial;
+}
+
+td {
+  text-align: left;
+  font-family: Arial;
+  width: 120px;
+  height: 30px;
+}
+
+.appointment {
+  display: inline-block;
+}
+
+.input-appointment {
+  width: 300px;
+  height: 30px;
+  font-family: Arial;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.input-appointment-big {
+  width: 300px;
+  height: 100px;
+  font-family: Arial;
+  display: block;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.agree-checkbox {
+  margin-top: 10px;
+}
+
+.agree-span {
+  font-family: Arial;
+  font-size: 11px;
+}
+
+.senden-button {
+  background-color: #a38f99;
+  margin-top: 10px;
+}
+
+.footer-inline {
+  display: inline-block;
+}
+
+#footer-unten {
+    position: static;
+    margin-top: 20px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #a38f99;
+    min-height: 80px;
+    border-top: 1px solid #4d1933;
+}

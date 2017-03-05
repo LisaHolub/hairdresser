@@ -8,10 +8,9 @@
 
 
   <body>
-
+<!-- Header: -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -21,48 +20,163 @@
           </button>
           <a class="navbar-brand" href="#">Hairdresser Hans</a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Make an appointment</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About us</a></li>
+            <li>
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
 
+<!-- Slider: -->
+    <div class="w3-container">
+    </div>
+
+    <div class="w3-content w3-section" style="max-width:1000px">
+      <img class="mySlides w3-animate-right" src="http://stylesbyartofhair.com/wp-content/uploads/2015/08/hair-8-1000x300.jpg" style="width:100%">
+      <img class="mySlides w3-animate-right" src="http://www.fight4rights.org/wp-content/uploads/Detecting-the-Most-Effective-Hair-Care-Techniques-1000x300.jpeg" style="width:100%">
+      <img class="mySlides w3-animate-right" src="http://stylesbyartofhair.com/wp-content/uploads/2015/08/medium-hairstyles-1000x300.jpg" style="width:100%">
+      <img class="mySlides w3-animate-right" src="http://stylesbyartofhair.com/wp-content/uploads/2015/08/young-hair-styles-1000x300.jpg" style="width:100%">
+
+    </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+    </script>
+
+<!-- Our Services -->
+    <section class="container">
+      <h1>Our services</h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Styling</h3>
+            </div>
+            <img src="http://angelicstyles.co.uk/wp-content/uploads/2013/06/Mobile-hairdesser-for-Weddings.jpg" alt="Styling" title="styling" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Coloring</h3>
+            </div>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/49/4e/88/494e885fdee51e4dd52dfce778d23acb.jpg" alt="Coloring" title="coloring" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Haircuts</h3>
+            </div>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/33/a7/72/33a7724dc9df3e4094159b9954512f23.jpg" alt="Haircuts" title="haircuts" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+<!-- Make an appointment: -->
+    <section class="container">
+      <h1>Make an Appointment</h1>
+      <div-class="appointment">
+        <div class="input-group">
+          <input class="input-appointment" type="text" class="form-control" placeholder="First and last name" aria-describedby="basic-addon2"> <br>
+          <input class="input-appointment" type="text" class="form-control" placeholder="Phone Number" aria-describedby="basic-addon2"> <br>
+          <input class="input-appointment" type="text" class="form-control" placeholder="Date" aria-describedby="basic-addon2"> <br>
+          <input class="input-appointment-big" type="text" class="form-control" placeholder="Other info (haircut wishes etc.)" aria-describedby="basic-addon2"> <br>
+          <input class="agree-checkbox" type="checkbox" checked><span class="agree-span">I agree that Hans is the best hair dresser.</span><br>
+          <input class="senden-button" type="submit" value="Senden">
+          </div>
+        </div>
+
+      <div class="navbar-right appointment">
+        <table>
+          <tbody>
+            <tr>
+              <th><strong>Day</strong></th>
+              <th><strong>Working Hours</strong></th>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10.00-18.00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>12.00-20.00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>8.00-12.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- Footer: -->
+    <div id="footer-unten">
+      <div class="container">
+        <div class="footer-left footer-inline">
+          <p><strong>Contact</strong></p>
+          <p>Friseur Hans GmbH</p>
+          <p>Tax Number</p>
+          <p>Friseurgasse 5, 1020 Wien</p>
+          <p>Phone: 0676 123 45 67</p>
+          <p>Email: friseur.hans@f-hans.at
+        </div>
+        <div class="footer-middle footer-inline">
+
+        </div>
+        <div class="navbar-right footer-inline">
+          <p><strong>Navigation</strong></p>
+          <p><a href="#">Our services</a></p>
+          <p><a href="#">Make an appointment</a></p>
+          <p><a href="#">FAQ</a></p>
+          <p><a href="#">About us</a></p>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
